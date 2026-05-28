@@ -1,5 +1,5 @@
-import { motion } from "motion/react";
 import heroImg from "@/assets/hero-justice.jpg";
+import { motion } from "motion/react";
 
 export function Hero() {
   return (
@@ -14,12 +14,12 @@ export function Hero() {
         <img
           src={heroImg}
           alt="Interior clássico de tribunal com estátua da justiça"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover object-left scale-x-[-1] md:object-center"
           width={1920}
           height={1080}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/85 to-navy-deep/30" />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-navy-deep/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/50 to-navy-deep/40 " />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-navy-deep/50" />
       </motion.div>
 
       <div className="relative noise" />
@@ -38,7 +38,7 @@ export function Hero() {
 
         {/* Headline */}
         <div className="max-w-4xl">
-          <h1 className="font-serif text-[clamp(2.6rem,7vw,6.2rem)] leading-[0.95] tracking-tight text-foreground">
+          <h1 className="font-serif text-[clamp(3.15rem,16vw,4.4rem)] leading-[0.9] tracking-[0] text-foreground sm:text-[clamp(3.8rem,9vw,5.2rem)] sm:leading-[0.95]">
             {["Justiça", "que se", "constrói com"].map((word, i) => (
               <motion.span
                 key={i}
@@ -66,9 +66,9 @@ export function Hero() {
             transition={{ delay: 1.1, duration: 1 }}
             className="mt-8 max-w-xl text-base sm:text-lg text-foreground/75 leading-relaxed"
           >
-            Assessoria jurídica especializada em direito trabalhista, recuperação de
-            crédito e atuação consultiva para instituições de ensino e o universo
-            equestre do Mangalarga Marchador.
+            Assessoria jurídica especializada em direito trabalhista, recuperação de crédito e
+            atuação consultiva para instituições de ensino e o universo equestre do Mangalarga
+            Marchador.
           </motion.p>
 
           <motion.div

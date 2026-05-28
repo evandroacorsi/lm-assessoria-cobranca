@@ -7,9 +7,9 @@ export function Sobre() {
       <div className="pointer-events-none absolute -right-10 top-0 bottom-0 hidden lg:flex items-center select-none">
         <div
           className="font-serif italic text-gold/[0.06] leading-none"
-          style={{ fontSize: "22rem", writingMode: "vertical-rl" }}
+          style={{ fontSize: "12rem", writingMode: "vertical-rl" }}
         >
-          fides
+          resultado
         </div>
       </div>
 
